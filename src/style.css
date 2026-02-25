@@ -15,3 +15,9 @@
   --color-dmt-gray2: #a9b0b8;
   --color-dmt-gray3: #e9f0f8;
 }
+
+@layer utilities {
+  .container {
+    @apply max-w-[1140px] mx-auto;
+  }
+}
