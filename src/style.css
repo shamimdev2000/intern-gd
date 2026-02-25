@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
-@theme{
-  --default-font-family: "Inter", sans-serif;
-}
-
-@theme{
-  --colour-dmt-gray:#D9D9D9
-  --colour-dmt-black1:#1E1E1F
-  --colour-dmt-black2:#38435C
+@theme {
+  --color-dmt-gray: #d9d9d9;
+  --color-dmt-black2: #38435c;
+  --color-dmt-brand2: #DF3636;
+  --color-dmt-brand3: #ffe9e9;
+  --color-dmt-blue1: #4285fa;
+  --color-dmt-blue2: #f1f5ff;
+  --color-dmt-green1: #34a853;
+  --color-dmt-green2: #eff8f2;
+  --color-dmt-yellow1: #f88513;
+  --color-dmt-yellow2: #fdf5e6;
+  --color-dmt-gray1: #6f7b88;
+  --color-dmt-gray2: #a9b0b8;
+  --color-dmt-gray3: #e9f0f8;
 }
 
 @layer utilities {
