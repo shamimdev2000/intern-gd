@@ -5,9 +5,9 @@
 }
 
 @theme{
-  --colour-dmt-gray:#D9D9D9
-  --colour-dmt-black1:#1E1E1F
-  --colour-dmt-black2:#38435C
+  --color-dmt-gray:#D9D9D9;
+  --color-dmt-black1:#1E1E1F;
+  --color-dmt-black2:#38435C;
 }
 
 @layer utilities {
