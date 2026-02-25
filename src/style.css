@@ -9,3 +9,9 @@
   --colour-dmt-black1:#1E1E1F
   --colour-dmt-black2:#38435C
 }
+
+@layer utilities {
+  .container {
+    @apply max-w-[1140px] mx-auto;
+  }
+}
