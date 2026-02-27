@@ -21,3 +21,52 @@
     @apply max-w-[1140px] mx-auto;
   }
 }
+
+
+/* animatedBorder css start */
+.card {
+  position: relative;
+  border-radius: 20px;
+  padding: 2px; /* border thickness */
+  background: transparent;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px; /* border thickness */
+  background: linear-gradient(
+    135deg,
+    #ff8c00,   /* orange */
+    #ff8c00,
+    #22c55e,   /* green */
+    #22c55e
+  );
+  background-size: 300% 300%;
+  animation: borderAnimation 6s linear infinite;
+   pointer-events: none;
+
+  /* THIS makes only border visible */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.card-inner {
+  background: #f3f3f3; /* your card bg */
+  border-radius: 18px;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes borderAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* animatedBorder css end */
