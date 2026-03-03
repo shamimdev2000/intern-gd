@@ -22,11 +22,11 @@
   }
 }
 
-/* animatedBorder css start */
+
 .card {
   position: relative;
   border-radius: 20px;
-  padding: 2px; /* border thickness */
+  padding: 2px; 
   background: transparent;
 }
 
@@ -35,19 +35,19 @@
   position: absolute;
   inset: 0;
   border-radius: 20px;
-  padding: 2px; /* border thickness */
+  padding: 2px; 
   background: linear-gradient(
     135deg,
-    #ff8c00,   /* orange */
+    #ff8c00,  
     #ff8c00,
-    #22c55e,   /* green */
+    #22c55e,  
     #22c55e
   );
   background-size: 300% 300%;
   animation: borderAnimation 2s linear infinite;
    pointer-events: none;
 
-  /* THIS makes only border visible */
+ 
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -68,4 +68,3 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-/* animatedBorder css end */
